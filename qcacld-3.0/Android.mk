@@ -58,8 +58,6 @@ ifeq ($(PRODUCT_VENDOR_MOVE_ENABLED),true)
 else
     LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/modules/$(WLAN_CHIPSET)
 endif
-#Move wlan.ko to vender/lib dir path for Q version
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules/$(WLAN_CHIPSET)
 
 include $(DLKM_DIR)/AndroidKernelModule.mk
 ###########################################################
